@@ -51,10 +51,5 @@ docker exec -it dsn-container bash -c 'jupyter lab list' | grep http | cut -f1 -
 ## Shutting the jupyter notebook down:
 
 ```
-docker stop dsn-container
-```
-
-To remove the jupyter notebook docker container:
-```
-docker rm dsn-container
+docker stop dsn-container && docker rm dsn-container
 ```
